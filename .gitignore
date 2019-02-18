@@ -1,2 +1,16 @@
-.csv
-.DS_Store
+## add ignore files 
+*$py.class
+*.pb
+*.pyc
+*.pkl
+*.p
+*.h5
+*.pickle
+*.csv
+*.DS_Store
+
+## add data folder 
+*data/
+*.ipynb_checkpoints/
+*.__pycache__/
+*checkpoints/
