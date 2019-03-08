@@ -8,6 +8,8 @@
 *.pickle
 *.csv
 *.DS_Store
+*.xlsx
+*.xls
 
 ## add data folder 
 *data/
