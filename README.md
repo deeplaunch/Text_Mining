@@ -4,4 +4,4 @@
 #### Sentiment Analysis
 #### Key Phrase Extraction
 #### Name Entity Detection
-#### Word Embedding: [visualization](https://projector.tensorflow.org/?config=https://gist.githubusercontent.com/dreamnew/97a6e108e8a7dec6a023071c4d4da87b/raw/36e391aa6955a48284db1596eaac831c2d4448ef/imdbw2v_projection_config.json)
+#### Word Embedding: [visualization](https://projector.tensorflow.org/?config=https://gist.githubusercontent.com/dreamnew/608ee8ae7b1fc8f2f76fc60f8fa4b23a/raw/a5daa69ae6a5aef234599ed442b10195bc6a2d47/imf_word2vec.json)
