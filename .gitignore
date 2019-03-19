@@ -11,7 +11,6 @@
 *.xlsx
 *.xls
 *.w2v
-*.gitattributes
 
 ## add data folder 
 *data/
