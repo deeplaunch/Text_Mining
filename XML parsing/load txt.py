@@ -37,7 +37,7 @@ for f in buff_files:
     with open(b, encoding="utf8") as file:
         meta = file.read()
 
-    oput.append((content, meta))
+    oput.append((content, meta, f))
     
 ## save tuple list as raw pickle file  
 with open(os.path.join(save_path, 'buff_raw.p'),'wb') as f:
