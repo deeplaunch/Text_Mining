@@ -51,8 +51,8 @@ def add_country(df):
     df.country.nunique() # 194 unique countries
         
     # special treatment of nan
-    df.loc[df.country =='', 'country']= df[df.country ==''].meta.str.extract(r'on ([\w|\s|\-|\'|\.|\;|\(|\|,)]*)[ ][\-]*[ ][Executive Board Meeting|EBM\/|EBM\\]').loc[:,0]
-    df.loc[df.country.isna(), 'country']= df[df.country.isna()].meta.str.extract(r'on ([\w|\s|\-|\'|\.|\;|\(|\|,)]*)\sExecutive Board Meeting').loc[:,0].to_list()
+    df.loc[df.country =='', 'country']= df[df.country ==''].meta.str.extract(r'on ([\w\s\-\'\.\;\(\,\)]*)\s[\-]*\s(?:Executive Board Meeting|EBM)').loc[:,0].to_list()
+    df.loc[df.country.isna(), 'country']= df[df.country.isna()].meta.str.extract(r'on ([\w\s\-\'\.\;\(\)\,)]*)\sExecutive Board Meeting').loc[:,0].to_list()
     
     # filter out na
     print('Dropping {} row with missing country'.format(df.country.isna().sum()))
